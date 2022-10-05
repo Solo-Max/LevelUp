@@ -1,0 +1,122 @@
+.compound {
+    position: relative;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    padding: rem(20) 0 0 0;
+    color: #fff;
+    background-image: $darkGradient;
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item {
+        background-color: $lightGray;
+        padding: rem(5);
+        width: rem(180);
+        min-height: rem(160);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: rem(20);
+        @media(max-width: em(450)) {
+            display: none;
+        }
+    }
+
+    &__main-image {
+        max-width: rem(200);
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+        position: relative;
+        &::before {
+            @include line-decor;
+            width: 200px;
+            top: 45%;
+            left: -115%;
+        }
+        &::after {
+            @include line-decor;
+            width: 200px;
+            top: 45%;
+            left: 115%;
+        }
+    }
+    
+    &__btn {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        @media(max-width: em(450)) {
+            position: relative;
+        }
+    }
+}
+.item-compound {
+    position: relative;
+    &__image {
+        width: rem(80);
+        height: rem(80);
+        border-radius: 100%;
+        overflow: hidden;
+        margin-bottom: rem(20);
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__descr {
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: rem(23);
+    }
+
+    &_first {
+        &::after {
+            @include line-decor;
+            width: 200px;
+            top: 80%;
+            left: 140%;
+            transform: rotate(25deg);
+        }
+    }
+    &_third {
+        &::after {
+            @include line-decor;
+            width: 200px;
+            top: 15%;
+            left: 140%;
+            transform: rotate(-25deg);
+        }
+    }
+    &_fourth {
+        &::before {
+            @include line-decor;
+            width: 200px;
+            top: 80%;
+            right: 140%;
+            transform: rotate(-25deg);
+        }
+    }
+    &_sixth {
+        &::before {
+            @include line-decor;
+            width: 200px;
+            top: 15%;
+            right: 140%;
+            transform: rotate(25deg);
+        }
+    }
+
+}

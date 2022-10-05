@@ -1,0 +1,18 @@
+@mixin line-decor {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 50px;
+        animation: shadow 1s infinite alternate;
+}
+
+@keyframes shadow {
+        from {
+                box-shadow: -1px 2px 22px 8px rgba(246, 251, 255, 0.5);
+        }
+        to {
+                box-shadow: -1px 2px 25px 15px rgba(246, 251, 255, 0.5);
+        }
+}

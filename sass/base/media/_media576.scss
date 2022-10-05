@@ -1,0 +1,169 @@
+@media (max-width: em(575)) {
+    .btn {
+        margin: 0 auto;
+        width: rem(130);
+        height: rem(50);
+        a {
+            padding: rem(8) rem(15);
+            font-size: rem(18);
+        }
+    }
+
+    .header {
+        padding: rem(15) 0;
+        &__btn {
+            right: 5%;
+        }
+    }
+
+    .promo {
+        &__image {
+            max-width: rem(120);
+        }
+
+        &__title  {
+           display: none;
+        }
+
+        &__body {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: rem(15);
+        }
+    }
+    .info-promo {
+        &__list {
+            text-align: center;
+            :not(:last-child) {
+                margin-bottom: rem(25);
+            }
+        }
+    }
+
+    .compound {
+        &__main-image {
+            max-width: rem(120);
+        }
+
+        &__item {
+            width: rem(120);
+            min-height: rem(100);
+        }
+        .item-compound {
+            &__image {
+                width: rem(60);
+                height: rem(60);
+                border-radius: 100%;
+                margin-bottom: rem(15);
+            }
+            &__descr {
+                font-weight: 700;
+                font-size: rem(10);
+                line-height: rem(15);
+            }
+        }
+        
+    }
+
+    .rewiews {
+        &__carousel {
+            max-width: rem(250);
+        }
+    }
+    .item-carousel {
+        &__text {
+            text-align: center;
+            font-weight: 400;
+            font-size: rem(12);
+            line-height: rem(15);
+        }
+
+        &__name {
+            font-size: rem(16);
+            line-height: rem(20);
+            margin-bottom: rem(10);
+        }
+        &__image {
+            max-width: 100%;
+            max-height: rem(150);
+            margin-bottom: rem(20);
+        }
+
+    }
+
+    .carousel {
+    
+        &__btn {
+            &_next {
+                top: 50%;
+                right: 10%;
+            }
+    
+            &_prev {
+                top: 50%;
+                left: 10%;
+            }
+        }
+    }   
+    
+    .footer {
+        padding: rem(15) 0;
+        &__text {
+            font-size: rem(10);
+        }
+    }
+
+    .information {
+        &__descr {
+            text-align: center;
+        }
+        &__wrap {
+            display: grid;
+            grid-template: 4fr 100px / 1fr;
+            gap: 0;
+            align-items: center;
+        }
+
+        &__image {
+            img {
+                display: none;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+    }
+
+    .body-promotion {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: rem(20);
+        &__image {
+            display: none;
+        }
+
+        &__form {
+            width: rem(300);
+        }
+    }
+
+    .price {
+
+        &__old {
+            font-weight: 500;
+            font-size: rem(25);
+            text-decoration: line-through;
+            margin-right: 0;
+        }
+    
+        &__new {
+            font-size: rem(40);
+            position: relative;
+            animation: none;
+        }
+    }
+}
+

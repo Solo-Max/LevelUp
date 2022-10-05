@@ -1,0 +1,23 @@
+.header {
+    position: fixed;
+    z-index: 50;
+    position: relative;
+    padding: rem(20) 0;
+    text-align: center;
+    background-image: $darkGradient;
+    width: 100%;
+        &__logo {
+            display: inline-block;
+            width: rem(150);
+            img {
+                width: 100%;
+            }
+        }
+
+    &__btn {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+    }
+}

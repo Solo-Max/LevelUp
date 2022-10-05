@@ -1,0 +1,19 @@
+@media (max-width: em(1399)) {
+    .compound {
+        &__main-image, 
+        .item-compound_first, 
+        .item-compound_second,
+        .item-compound_third,
+        .item-compound_fourth,
+        .item-compound_fifth,
+        .item-compound_sixth {
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,60 @@
+@import 'base/normalize.css';
+@import 'base/functions';
+@import 'base/variables';
+@import 'base/mixins';
+@import '../fonts/fonticon.css';
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/compound';
+@import 'blocks/reviews';
+@import 'blocks/information';
+@import 'blocks/promotion';
+@import 'blocks/footer';
+@import 'blocks/btn';
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+}
+
+body {
+	font-size: rem(16);
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: rem(1430);
+	margin: 0 auto;
+	min-height: 100%;
+	padding: 0 rem(15);
+}
+
+
+@import 'base/media/media1600';
+@import 'base/media/media1400';
+@import 'base/media/media1200';
+@import 'base/media/media992';
+@import 'base/media/media768';
+@import 'base/media/media576';
+@import 'base/media/media320';

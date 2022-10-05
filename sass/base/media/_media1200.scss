@@ -1,0 +1,43 @@
+@media (max-width: em(1199)) {
+    .header {
+        text-align: left;
+    }
+
+    .promo {
+        padding: rem(30) 0 0 0;
+        &__title  {
+            font-size: rem(28);
+            margin-bottom: rem(50);
+        }
+        &__image {
+            max-width: rem(150);
+        }
+    }
+
+    .info-promo {
+
+        &__list {
+            margin-bottom: rem(40);
+        }
+
+        &__item {
+            font-size: rem(16);
+        }
+    
+    }
+
+    .btn {
+        width: rem(200);
+        height: rem(50);
+        a {
+            font-size: rem(30);
+            padding: rem(10) rem(25);
+        }
+    }
+    
+    .information {
+        &__wrap {
+            grid-template: 4fr repeat(2, 50px) / repeat(2, 1fr);
+        }
+    }
+}
